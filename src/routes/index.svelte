@@ -1,8 +1,9 @@
 <script>
-	import Grid from "../components/grid.svelte";
-	import MaterialApp from "svelte-materialify/src/components/MaterialApp/MaterialApp.svelte";
+	import { Container } from "svelte-materialify";
+import Start from "./start.svelte";
 </script>
 
-<MaterialApp>
-	<Grid />
-</MaterialApp>
+<Container class="border ma ">
+	<Start></Start>
+
+</Container>
