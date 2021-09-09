@@ -7,7 +7,7 @@
 
     let player1 = true;
     import { can_make_a_move, is_player1 } from "../store";
-import { Container } from "svelte-materialify";
+import { Container, MaterialApp } from "svelte-materialify";
     is_player1.subscribe((value) => {
         player1 = value;
     });
@@ -28,9 +28,9 @@ import { Container } from "svelte-materialify";
     };
 </script>
 
-
+    
     <div in:fly = {{x:100,duration:1000}} >
-
+        
         <Button  block  class="primary-color mt-3" size="x-large" on:click={start_the_game} >Create Game</Button>
     </div>
     <div in:fly = {{x:-100,duration:1000}}>
